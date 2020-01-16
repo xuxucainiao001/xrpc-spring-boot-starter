@@ -20,7 +20,7 @@ public class XrpcAutoConfiguration {
 	public XrpcConfiguration createXrpcConfiguration(XrpcProperties xrpcProperties) {
 		XrpcConfiguration con=new XrpcConfiguration(xrpcProperties);
 		con.initialize();
-		return new XrpcConfiguration(xrpcProperties);		
+		return con;		
 	}
 	
 	@Bean
